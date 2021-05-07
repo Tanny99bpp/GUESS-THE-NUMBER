@@ -7,9 +7,7 @@ int main(){
     int number,guess,nguesses=1;
     srand(time(0));
     number = rand()%1000 +1;// Generates a random number between 1 and 100
-    //printf("The number is %d\n",number);
-    //Keep running the loop until the number is guessed
-     do{
+     while(1){
         printf("      Guess the number between 1 to 1000\n");
         scanf("%d",&guess);
         if(guess>number){
@@ -22,6 +20,12 @@ int main(){
             printf("                   Congratulations!!!!! You guessed the number %d in %d attempts",number,nguesses);
         }
         nguesses++;
-     }while(guess != number);
+        if(nguesses==6){
+            printf("\n\n           THE END\n");
+            printf("\n\n\nSorry!!!After reviewing, we saw that you lost the game.So, no more chances. Better luck next time.");
+            break;
+        }
+     }
     return 0;
 }
+
