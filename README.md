@@ -3,4 +3,4 @@ Guess the number is a game where you have to guess the number from 1 to 1000. It
 
 
 
-Note: You can have only 5 chances.
+Note: You have only 5 chances.
